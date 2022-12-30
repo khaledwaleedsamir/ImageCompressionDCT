@@ -11,6 +11,10 @@ Columns=Columns/3;
 RChannel = rgbImage(:, :, 1);
 GChannel = rgbImage(:, :, 2);
 BChannel = rgbImage(:, :, 3);
+%display the 3 color channels separatly
+imshow(RChannel); figure;
+imshow(GChannel); figure;
+imshow(BChannel); figure;
 
 %getting the DCT for each channel
 for i = 1:8:Rows
